@@ -4,7 +4,7 @@ const socketIO = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
-const io = socketIO(server, { cors: { origin: 'http://localhost:3000' } });
+const io = socketIO(server, { cors: { origin: 'https://pokedexiagente.netlify.app' } });
 
 const PORT = 3009;
 let users = [];
